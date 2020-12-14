@@ -24,6 +24,10 @@ class PrototypesController < ApplicationController
     @comments = @prototype.comments
   end
 
+  def search
+    
+  end
+
   def edit
     @prototype = Prototype.find(params[:id])
     unless current_user == @prototype.user
