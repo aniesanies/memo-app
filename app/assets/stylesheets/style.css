@@ -322,3 +322,17 @@ a {
     width: 100%;
   }
 }
+
+.search-form {
+  text-align: center;
+  padding-top: 2px
+}
+
+.search-form .search-input {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.search-form .search-btn {
+  width: 10%;
+}
