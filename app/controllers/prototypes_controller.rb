@@ -25,7 +25,7 @@ class PrototypesController < ApplicationController
   end
 
   def search
-    
+    @prototypes = Prototype.search(params[:keyword])
   end
 
   def edit
