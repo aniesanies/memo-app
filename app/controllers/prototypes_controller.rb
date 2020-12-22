@@ -25,7 +25,11 @@ class PrototypesController < ApplicationController
   end
 
   def search
-    @prototypes = Prototype.search(params[:keyword])
+    if params[:keyword].present?
+      @prototypes = Prototype.search(params[:keyword])
+    else
+      @prototypes = Prototype.none
+    end
   end
 
   def edit
